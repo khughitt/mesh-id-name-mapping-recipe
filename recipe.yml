@@ -1,0 +1,13 @@
+data:
+  input:
+    desc: "/data/raw/mesh/desc2024.gz"
+    supp: "/data/raw/mesh/supp2024.gz"
+  output:
+    mapping: "/data/packages/mesh/2024/mapping.feather"
+    pkg: "/data/packages/mesh/2024/datapackage.yml"
+metadata:
+  title: "Medical Subject Headings (MeSH) ID/Name Mapping"
+  alias: "mesh-id-mapping"
+  description: "A simple table containing MeSH IDs and the names of the entities they are associated with."
+  source: "https://www.nlm.nih.gov/databases/download/mesh.html"
+  version: "2024"
