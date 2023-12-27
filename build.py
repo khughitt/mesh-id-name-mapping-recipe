@@ -36,8 +36,8 @@ with gzip.open(mdat["data"]["input"]["supp"], "rb") as fp:
     tree = ET.parse(fp)
     root = tree.getroot()
 
-ids = ids + [elem.text for elem in root.findall(".//DescriptorRecord/DescriptorUI")]
-names = names + [elem.text for elem in root.findall(".//DescriptorRecord/DescriptorName/String")]
+ids = ids + [elem.text for elem in root.findall(".//SupplementalRecord/SupplementalRecordUI")]
+names = names + [elem.text for elem in root.findall(".//SupplementalRecord/SupplementalRecordName/String")]
 
 #
 # 3. package
